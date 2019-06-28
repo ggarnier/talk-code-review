@@ -1,0 +1,247 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>The anatomy of a code review</title>
+
+		<link rel="stylesheet" href="css/reveal.css">
+		<link rel="stylesheet" href="css/theme/black.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="lib/css/zenburn.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				      <section data-markdown>
+        <script type="text/template">
+          # The Anatomy of a code review
+
+## Guilherme Garnier
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## A traditional CI pipeline
+
+```
++--------------+       +-----------+       +--------+
+|              |       | integrate |       |        |
+| code && test |  -->  | to master |  -->  | deploy |
+|              |       |  branch   |       |        |
++--------------+       +-----------+       +--------+
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Adding code review
+
+```
++--------------+      +-------------+       +-----------+       +--------+
+|              |      |             |       | integrate |       |        |
+| code && test |  --> | code review |  -->  | to master |  -->  | deploy |
+|              |      |             |       |  branch   |       |        |
++--------------+      +-------------+       +-----------+       +--------+
+```
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # What's a code review?
+
+A tool to:
+
+- improve code quality
+- share knowledge about the project
+- share knowledge about technologies, libraries, etc
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          Adding code reviews to your workflow
+
+TODO: replace with image
+
+- Nobody can commit directly to master
+- Create a branch for each feature/bugfix
+- After finishing code and tests, request a code review
+- pull request (github), merge request (gitlab)
+- wait for reviews
+- discussions/fixes
+- integrate when approved
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # How to start code reviews
+
+TODO: add example
+- Each PR should be a cohesive unity
+- Make you code/test/docs as clear as possible. Code reviewers will thank you!
+- Make PRs as small as possible
+.image https://img.devrant.com/devrant/rant/r_674494_BEXde.jpg
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # How to receive code reviews
+
+TODO: add example
+- Be humble and thankful
+- Start discussions when needed
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # How to review someone else's code
+
+TODO: add example
+- Take time to review, don't rush
+- Watch for details
+- Don't be limited to critics, recognize good decisions
+- In case of doubt, ask
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Code review checklist
+
+- **Accuracy and completeness:** does the code do what it’s supposed to do?
+- **Bug free:** doesn’t it introduce new bugs (like not handling corner cases)?
+- **Expressiveness:** is it clear on its intentions? Can a reader clearly understand the coder’s objectives?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Code review checklist
+
+- **Scalability:** could it handle the expected load?
+- **Conventions and standards:** does it follow the agreed conventions for code style, file and directory structure, etc?
+- **Tests:** do the tests cover all the use cases, including important corner cases? Is there a specific use case that deserves more tests?
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Benefits
+
+- to the code author
+- to the reviewer
+- to the team
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Benefits to the code author
+
+- **Learn about the project:**
+- **Learn about the technologies involved:**
+- **Learn other ways to solve problems:**
+- **Learn to accept critics:**
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Benefits to the reviewer
+
+- **Learn about the changes:**
+- **Learn about the project:**
+- **Learn about the technologies involved:**
+- **Develop a critical view of someone else's code:**
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Benefits to the team
+
+- **Shared code ownership:**
+- **Helps keeping standards:**
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          # Common problems and concerns
+
+- Won’t this slow me down?
+- How to handle large pull requests?
+- How many reviewers do I need?
+- Do I need code reviews if I pair program?
+- When not to use code reviews?
+
+        </script>
+      </section>
+
+
+			</div>
+		</div>
+
+		<script src="lib/js/head.min.js"></script>
+		<script src="js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+        width: 1280,
+        height: 800,
+        margin: 0.1,
+        controls: false,
+        progress: false,
+        history: true,
+        center: true,
+				dependencies: [
+					{ src: 'plugin/markdown/marked.js' },
+					{ src: 'plugin/markdown/markdown.js' },
+					{ src: 'plugin/notes/notes.js', async: true },
+					{ src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+				]
+			});
+		</script>
+	</body>
+</html>
