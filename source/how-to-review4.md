@@ -2,4 +2,4 @@
 
 In case of doubt, ask
 
-![](static/ask.png)
+![](static/question.png)

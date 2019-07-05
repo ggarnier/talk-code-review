@@ -59,13 +59,7 @@ https://blog.guilhermegarnier.com
         <script type="text/template">
           ## A traditional CI pipeline
 
-```
-+--------------+       +-----------+       +--------+
-|              |       | integrate |       |        |
-| code && test |  -->  | to master |  -->  | deploy |
-|              |       |  branch   |       |        |
-+--------------+       +-----------+       +--------+
-```
+<img src="static/pipeline1.png" style="background-color: white" />
 
         </script>
       </section>
@@ -74,13 +68,7 @@ https://blog.guilhermegarnier.com
         <script type="text/template">
           ## Adding code review
 
-```
-+--------------+      +-------------+       +-----------+       +--------+
-|              |      |             |       | integrate |       |        |
-| code && test |  --> | code review |  -->  | to master |  -->  | deploy |
-|              |      |             |       |  branch   |       |        |
-+--------------+      +-------------+       +-----------+       +--------+
-```
+<img src="static/pipeline2.png" style="background-color: white" />
 
         </script>
       </section>
@@ -100,41 +88,101 @@ A tool to:
 
       <section data-markdown>
         <script type="text/template">
-          Adding code reviews to your workflow
+          ## Adding code reviews to your workflow
 
-TODO: replace with image
-
-- Nobody can commit directly to master
-- Create a branch for each feature/bugfix
-- After finishing code and tests, request a code review
-- pull request (github), merge request (gitlab)
-- wait for reviews
-- discussions/fixes
-- integrate when approved
+<img src="static/workflow1.png" style="background-color: white" />
 
         </script>
       </section>
 
       <section data-markdown>
         <script type="text/template">
-          # Starting code reviews
+          ## Adding code reviews to your workflow
 
-TODO: add example
-- Each PR should be a cohesive unity
-- Make you code/test/docs as clear as possible. Reviewers will thank you!
-- Make PRs as small as possible
-.image https://img.devrant.com/devrant/rant/r_674494_BEXde.jpg
+<img src="static/workflow2.png" style="background-color: white" />
 
         </script>
       </section>
 
       <section data-markdown>
         <script type="text/template">
-          # Receiving code reviews
+          ## Adding code reviews to your workflow
 
-TODO: add example
+<img src="static/workflow3.png" style="background-color: white" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Adding code reviews to your workflow
+
+<img src="static/workflow4.png" style="background-color: white" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Adding code reviews to your workflow
+
+<img src="static/workflow5.png" style="background-color: white" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Adding code reviews to your workflow
+
+<img src="static/workflow6.png" style="background-color: white" />
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Starting code reviews
+
+Each PR should be a cohesive unity
+
+- easier to get context
+- easier to revert, if needed
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Starting code reviews
+
+Readability is very important
+
+- make you code/test/docs as clear as possible
+- add context do your PR description (images, link to issues)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Starting code reviews
+
+Make PRs as small as possible
+
+![](static/meme.png)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
+          ## Receiving code reviews
+
 - Be humble and thankful
 - Start discussions when needed
+
+![](static/reviewing.png)
 
         </script>
       </section>
@@ -174,11 +222,18 @@ Don't be limited to critics, recognize good decisions
 
       <section data-markdown>
         <script type="text/template">
+          ![](static/blood.gif)
+
+        </script>
+      </section>
+
+      <section data-markdown>
+        <script type="text/template">
           ## Reviewing code reviews
 
 In case of doubt, ask
 
-![](static/ask.png)
+![](static/question.png)
 
         </script>
       </section>

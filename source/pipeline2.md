@@ -1,9 +1,3 @@
 ## Adding code review
 
-```
-+--------------+      +-------------+       +-----------+       +--------+
-|              |      |             |       | integrate |       |        |
-| code && test |  --> | code review |  -->  | to master |  -->  | deploy |
-|              |      |             |       |  branch   |       |        |
-+--------------+      +-------------+       +-----------+       +--------+
-```
+<img src="static/pipeline2.png" style="background-color: white" />

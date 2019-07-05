@@ -1,9 +1,3 @@
 ## A traditional CI pipeline
 
-```
-+--------------+       +-----------+       +--------+
-|              |       | integrate |       |        |
-| code && test |  -->  | to master |  -->  | deploy |
-|              |       |  branch   |       |        |
-+--------------+       +-----------+       +--------+
-```
+<img src="static/pipeline1.png" style="background-color: white" />
