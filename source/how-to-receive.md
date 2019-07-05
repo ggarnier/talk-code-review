@@ -1,4 +1,4 @@
-# How to receive code reviews
+# Receiving code reviews
 
 TODO: add example
 - Be humble and thankful

@@ -1,4 +1,4 @@
-# How to review someone else's code
+# Reviewing code reviews
 
 TODO: add example
 - Take time to review, don't rush
