@@ -1,4 +1,4 @@
-## Starting code reviews
+# Starting code reviews
 
 Readability is very important
 

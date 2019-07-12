@@ -2,7 +2,6 @@
 order: manual
 slides:
 - cover
-- me
 - pipeline1
 - pipeline2
 - definition
@@ -12,6 +11,11 @@ slides:
 - workflow4
 - workflow5
 - workflow6
+- checklist
+- benefits1
+- benefits2
+- benefits3
+- benefits4
 - how-to-start1
 - how-to-start2
 - how-to-start3
@@ -21,10 +25,5 @@ slides:
 - how-to-review3
 - blood
 - how-to-review4
-- checklist
-- benefits1
-- benefits2
-- benefits3
-- benefits4
 - problems1
 - end

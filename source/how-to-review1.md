@@ -1,4 +1,4 @@
-## Reviewing code reviews
+# Reviewing code reviews
 
 Take time to review, don't rush
 

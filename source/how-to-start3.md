@@ -1,4 +1,4 @@
-## Starting code reviews
+# Starting code reviews
 
 Make PRs as small as possible
 

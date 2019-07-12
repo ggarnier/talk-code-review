@@ -1,4 +1,4 @@
-## Reviewing code reviews
+# Reviewing code reviews
 
 In case of doubt, ask
 
