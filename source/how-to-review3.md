@@ -1,5 +1,3 @@
-## Reviewing code reviews
-
-Don't be limited to critics, recognize good decisions
+## Don't be limited to critics, recognize good decisions
 
 ![](static/top-comments.png)
