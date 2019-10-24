@@ -2,12 +2,12 @@
   <div>
    <img src="static/eu.jpg" width="400px" />
 
-   https://blog.guilhermegarnier.com
-
    <div style="display: flex; margin-top: 20px; justify-content: center; align-items: center;">
    <img src="static/twitter.svg" style="width: 40px; margin: 0 15px" />
    <a href="https://twitter.com/gpgarnier/">@gpgarnier</a>
    </div>
+
+   https://blog.guilhermegarnier.com
   </div>
 
   <div style="margin-left: 20px">
