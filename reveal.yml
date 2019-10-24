@@ -2,6 +2,7 @@
 order: manual
 slides:
 - cover
+- me
 - pipeline1
 - pipeline2
 - definition
